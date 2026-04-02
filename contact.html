@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Freelance Pyrography Artist</title>
+    <meta name="description"
+        content="Get in touch with the pyrography artist for inquiries, collaborations, or questions about hand-burned wood art.">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-wood">
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-xl sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" alt="Pyrography Logo">
+                <span><span class="text-accent italic">Pyrography</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <!-- Mobile Home Links (Direct access for touch devices) -->
+                    <li class="nav-item d-xl-none"><a class="nav-link" href="index.html">home 1</a></li>
+                    <li class="nav-item d-xl-none"><a class="nav-link" href="index2.html">home 2</a></li>
+
+                    <!-- Desktop Home Dropdown (Single menu for desktop) -->
+                    <li class="nav-item dropdown d-none d-xl-block">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownHome" role="button" data-bs-toggle="dropdown" aria-expanded="false">home</a>
+                        <ul class="dropdown-menu border-artisanal" aria-labelledby="navbarDropdownHome">
+                            <li><a class="dropdown-item" href="index.html">home 1</a></li>
+                            <li><a class="dropdown-item" href="index2.html">home 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">about</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="process.html">process</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">custom order</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <div class="d-flex gap-2">
+                            <button id="theme-toggle" class="nav-icon-btn" title="Toggle Theme"><i
+                                    class="fas fa-moon"></i></button>
+                            <button id="rtl-toggle" class="nav-icon-btn" title="Toggle Layout"><i
+                                    class="fas fa-arrows-alt-h"></i></button>
+                        </div>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="signup.html" class="btn btn-primary-wood">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-secondary bg-opacity-10 py-5">
+        <div class="container py-5 text-center" data-aos="fade-up">
+            <h6 class="text-accent text-uppercase small fw-bold mb-3" style="letter-spacing: 5px;">Get in Touch</h6>
+            <h1 class="display-3 mb-4 font-serif">Let's <span class="text-accent italic">Connect</span></h1>
+            <p class="lead text-secondary max-width-600 mx-auto fs-5">Have a question or a general inquiry? I'm always
+                happy to discuss art, process, and wood burning.</p>
+        </div>
+    </header>
+
+    <!-- 1. Contact Info & Form Section -->
+    <section id="contact-main" class="bg-wood py-5 py-lg-8">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5" data-aos="fade-up">
+                    <h2 class="mb-4 font-serif">Contact Information</h2>
+                    <p class="text-secondary mb-5 fs-5">Feel free to reach out through the form or my direct contact
+                        details. I typically respond within 24-48 hours.</p>
+
+                    <div class="d-flex gap-4 mb-5 card border-artisanal p-4 bg-transparent text-accent">
+                        <div class="text-accent h1 mb-0"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h6 class="text-uppercase ls-2">Email Me</h6>
+                            <p class="text-secondary mb-0">hello@pyrographyart.com</p>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-4 mb-5 card border-artisanal p-4 bg-transparent text-accent">
+                        <div class="text-accent h1 mb-0"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h6 class="text-uppercase ls-2">Studio Location</h6>
+                            <p class="text-secondary mb-0">Artisan Woodside, CA 94062</p>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-4 card border-artisanal p-4 bg-transparent text-accent">
+                        <div class="text-accent h1 mb-0"><i class="fab fa-instagram"></i></div>
+                        <div>
+                            <h6 class="text-uppercase ls-2">Social Media</h6>
+                            <p class="text-secondary mb-0">@freelance_pyrographyartist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-up">
+                    <h2 class="mb-4 font-serif text-center" style="text-align: center;">Send Us a Message</h2>
+                    <div class="card p-5 border-artisanal bg-transparent">
+
+                        <form id="contact-form" novalidate>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <label class="form-label text-uppercase small fw-bold">Full Name</label>
+                                    <input type="text" class="form-control" placeholder="John Doe" required>
+                                    <div class="invalid-feedback italic">Please enter your name</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-uppercase small fw-bold">Email Address</label>
+                                    <input type="email" class="form-control" placeholder="john@example.com" required>
+                                    <div class="invalid-feedback italic">Please enter a valid email</div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label text-uppercase small fw-bold">Subject</label>
+                                    <input type="text" class="form-control" placeholder="Inquiry about..." required>
+                                    <div class="invalid-feedback italic">Please specify a subject</div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label text-uppercase small fw-bold">Message</label>
+                                    <textarea class="form-control" rows="5" placeholder="Your message here..."
+                                        required></textarea>
+                                    <div class="invalid-feedback italic">Please enter your message</div>
+                                </div>
+                                <div class="col-12 mt-4 text-center">
+                                    <button type="submit" class="btn btn-primary-wood btn-lg px-5">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="contact-map" class="py-0">
+        <div class="container-fluid p-0">
+            <div class="card border-0 rounded-0"
+                style="height: 450px; overflow: hidden; filter: grayscale(1) sepia(0.2) contrast(1.1);">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12693.4567!2d-122.2530!3d37.4275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fa4f6!2sWoodside%2C+CA!5e0!3m2!1sen!2sus!4v1234567890"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Studio Visit Section -->
+    <section class="bg-dark text-white py-5" id="visit">
+        <div class="container text-center">
+            <h2 class="display-5 mb-4 font-serif">Studio <span class="text-accent italic">Visits</span></h2>
+            <p class="lead opacity-75 mb-5 mx-auto max-width-700 fs-5 text-secondary">Visits to my wood shop are by
+                appointment only. This ensures I can give you my full attention and showcase various wood types and
+                finished pieces.</p>
+            <div class="row justify-content-center g-4 mt-2">
+                <div class="col-md-5" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-5 border-artisanal border-white">
+                        <div class="text-accent h1 mb-4"><i class="fas fa-calendar-check"></i></div>
+                        <h5 class="text-uppercase ls-2">Mon - Fri</h5>
+                        <p class="text-secondary mb-0">10:00 AM - 05:00 PM</p>
+                    </div>
+                </div>
+                <div class="col-md-5" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-5 border-artisanal border-white">
+                        <div class="text-accent h1 mb-4"><i class="fas fa-clock"></i></div>
+                        <h5 class="text-uppercase ls-2">Sat - Sun</h5>
+                        <p class="text-secondary mb-0">By Special Request Only</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="footer-logo mb-4">
+                        <img src="assets/img/logo.png" alt="Pyrography Logo">
+                        <h3 class="text-white"><span class="text-accent italic">Pyrography</span></h3>
+                    </div>
+                    <p class="text-secondary">Handcrafted excellence in every burn. Dedicated to the ancient art of
+                        pyrography with a modern, artistic touch. Since 2010.</p>
+                    <div class="d-flex gap-3 mt-5">
+                        <a href="#" class="btn btn-outline-light text-accent rounded-0 px-3"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-light text-accent rounded-0 px-3"><i
+                                class="fab fa-facebook-p"></i></a>
+                        <a href="#" class="btn btn-outline-light text-accent rounded-0 px-3"><i
+                                class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 footer-links">
+                    <h5>explore</h5>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="portfolio.html">portfolio</a></li>
+                        <li><a href="services.html">services</a></li>
+                        <li><a href="about.html">about</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 footer-links">
+                    <h5>support</h5>
+                    <ul>
+                        <li><a href="pricing.html">custom order</a></li>
+                        <li><a href="process.html">our process</a></li>
+                        <li><a href="faq.html">faq</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5>newsletter</h5>
+                    <p class="small text-secondary mb-4">Subscribe to get updates on new pieces and limited commission
+                        slots.</p>
+                    <form class="position-relative">
+                        <input type="email" class="form-control" placeholder="YOUR EMAIL ADDRESS"
+                            style="background: transparent; color: white;">
+                        <button class="btn text-accent position-absolute top-50 end-0 translate-middle-y me-3"><i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <hr class="mt-5 border-secondary opacity-25">
+            <div class="text-center py-4">
+                <p class="small text-secondary mb-0">&copy; 2026 Freelance PyrographyArtist. Hand-burned with Pride.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button id="scroll-to-top" title="Scroll to Top"><i class="fas fa-long-arrow-alt-up"></i></button>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

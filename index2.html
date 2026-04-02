@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Pyrography Artist | Handcrafted Wood Burning Art</title>
+    <meta name="description" content="Discover premium pyrography art by a freelance wood burning artist. From custom portraits to wildlife nature pieces, each work is burned with precision and passion.">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-wood">
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-xl sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" alt="Pyrography Logo">
+                <span><span class="text-accent italic">Pyrography</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <!-- Mobile Home Links (Direct access for touch devices) -->
+                    <li class="nav-item d-xl-none"><a class="nav-link" href="index.html">home 1</a></li>
+                    <li class="nav-item d-xl-none"><a class="nav-link active" href="index2.html">home 2</a></li>
+
+                    <!-- Desktop Home Dropdown (Single menu for desktop) -->
+                    <li class="nav-item dropdown d-none d-xl-block">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownHome" role="button" data-bs-toggle="dropdown" aria-expanded="false">home</a>
+                        <ul class="dropdown-menu border-artisanal" aria-labelledby="navbarDropdownHome">
+                            <li><a class="dropdown-item" href="index.html">home 1</a></li>
+                            <li><a class="dropdown-item active" href="index2.html">home 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">about</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="process.html">process</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">custom order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <div class="d-flex gap-2">
+                            <button id="theme-toggle" class="nav-icon-btn" title="Toggle Theme"><i class="fas fa-moon"></i></button>
+                            <button id="rtl-toggle" class="nav-icon-btn" title="Toggle Layout"><i class="fas fa-arrows-alt-h"></i></button>
+                        </div>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="signup.html" class="btn btn-primary-wood">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section-2 d-flex align-items-center pb-5 pb-lg-10">
+        <div class="container hero-content text-white text-center" data-aos="fade-up">
+            <h6 class="text-uppercase text-accent fw-bold mb-4 ls-5">The Art of Fire</h6>
+            <h1 class="display-1 mb-5 font-serif">A Legacy <br>Written in <span class="text-accent italic">Embers</span></h1>
+            <p class="lead mb-5 mx-auto opacity-75" style="max-width: 700px;">Experience the intersection of high-definition technique and generational permanence. Every piece is a hand-burned masterpiece designed for the sophisticated collector.</p>
+            <div class="d-flex justify-content-center gap-4">
+                <a href="portfolio.html" class="btn btn-primary-wood btn-hero shadow-lg">Explore Gallery</a>
+                <a href="pricing.html" class="btn btn-outline-light btn-hero px-5 py-3 rounded-0 border-2 text-uppercase fw-bold ls-2 shadow-lg">Custom Order</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. The Craft Section -->
+    <section class="bg-wood py-5 py-lg-8" id="craft">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="border-artisanal">
+                        <img src="assets/img/studio-vibe.jpg" alt="Atmospheric Studio" class="img-fluid shadow-lg w-100">
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up">
+                    <h6 class="text-accent text-uppercase small fw-bold ls-5">The Studio</h6>
+                    <h2 class="mb-4 font-serif">Precision Meets <br><span class="text-accent italic">Primal Fire</span></h2>
+                    <p class="mb-4 lead text-secondary">While we honor the ancient roots of pyrography, our studio pushes the boundaries of the medium. We specialize in high-definition burning that mimics the depth of fine art while retaining the raw tactile energy of the wood grain.</p>
+                    <ul class="list-unstyled mb-5">
+                        <li class="mb-3"><i class="fas fa-check text-accent me-3"></i> Advanced heat-mapping techniques</li>
+                        <li class="mb-3"><i class="fas fa-check text-accent me-3"></i> Responsibly sourced heritage timber</li>
+                        <li class="mb-3"><i class="fas fa-check text-accent me-3"></i> Exclusive limited-run commissions</li>
+                    </ul>
+                    <a href="about.html" class="btn btn-primary-wood">The Artisan Philosophy</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Featured Work Section -->
+    <section id="minimalist-gallery" class="py-5 py-lg-10 bg-wood">
+        <div class="container">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <h6 class="text-accent text-uppercase small fw-bold ls-5">Curated Archive</h6>
+                <h2 class="font-serif">The Legacy <span class="italic">Collection</span></h2>
+                <div class="divider mx-auto"></div>
+                <p class="text-secondary max-width-600 mx-auto mt-3">A hand-selected portfolio of masterworks commissioned by private estates and historical collectors.</p>
+            </div>
+            
+            <div class="row g-4 d-flex align-items-stretch">
+                <!-- Large Featured Item -->
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="art-card h-100">
+                        <div class="ratio ratio-16x9 h-100">
+                            <img src="assets/img/art-wildlife-2.png" alt="Featured Masterpiece" class="object-fit-cover w-100 h-100">
+                        </div>
+                        <div class="art-overlay p-5 d-flex flex-column justify-content-end">
+                            <h3 class="font-serif text-white h1">The Guardian Motif</h3>
+                            <p class="italic text-accent fs-4">Archival Wildlife Narrative</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stacked Smaller Items -->
+                <div class="col-lg-4 d-flex flex-column gap-4" data-aos="fade-up">
+                    <!-- Item 1 -->
+                    <div class="art-card flex-grow-1">
+                        <div class="ratio ratio-4x3 h-100">
+                            <img src="assets/img/art-portrait-2.png" alt="Portrait" class="object-fit-cover w-100 h-100">
+                        </div>
+                        <div class="art-overlay p-4">
+                            <h4 class="font-serif">Chronicles in Oak</h4>
+                            <p class="small italic">Bespoke Biography</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="art-card flex-grow-1">
+                        <div class="ratio ratio-4x3 h-100">
+                            <img src="assets/img/art-decorative-1.jpg" alt="Nature" class="object-fit-cover w-100 h-100">
+                        </div>
+                        <div class="art-overlay p-4">
+                            <h4 class="font-serif">Botanical Shadows</h4>
+                            <p class="small italic">Fine Art Realism</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View All Button -->
+            <div class="text-center mt-5 pt-4" data-aos="fade-up">
+                <a href="portfolio.html" class="btn btn-outline-dark px-5 py-3 rounded-0 border-2 text-uppercase fw-bold ls-2">Explore Full Archive</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Services Overview Section -->
+    <section id="services" class="bg-dark text-white py-5 py-lg-8 border-artisanal-y">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <h6 class="text-accent text-uppercase small fw-bold ls-5">The Collection</h6>
+                <h2 class="font-serif text-white">Artistic Specializations</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <!-- Horizontal Feature Rows -->
+            <div class="row align-items-center g-5 mb-5 py-5 border-artisanal-bottom" data-aos="fade-up">
+                <div class="col-lg-6">
+                    <div class="art-card ratio ratio-16x9">
+                        <img src="assets/img/service-portrait.png" alt="Custom Portraits" class="object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="font-serif mb-4">Corporate <span class="text-accent italic">Heritage</span></h3>
+                    <p class="lead opacity-75 mb-4">Elevate your executive environment with high-impact pyrography. We specialize in archival identity slabs that communicate the stability and history of your brand through textured fire.</p>
+                    <a href="services.html" class="btn btn-outline-light px-4 py-2 text-uppercase small ls-2">Enterprise Solutions</a>
+                </div>
+            </div>
+
+            <div class="row align-items-center g-5 flex-row-reverse" data-aos="fade-up">
+                <div class="col-lg-6">
+                    <div class="art-card ratio ratio-16x9">
+                        <img src="assets/img/service-signage.png" alt="Bespoke Signage" class="object-fit-cover">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="font-serif mb-4">Commemorative <span class="text-accent italic">Fine Art</span></h3>
+                    <p class="lead opacity-75 mb-4">Our premium portraiture service is more than a sketch on wood; it is a collaborative legacy project. We work with high-resolution memories to create high-contrast, atmospheric heirs.</p>
+                    <a href="services.html" class="btn btn-outline-light px-4 py-2 text-uppercase small ls-2">Commission Terms</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Testimonials (Carousel) Section -->
+    <section id="minimalist-process" class="py-5 py-lg-10 bg-wood">
+        <div class="container" data-aos="fade-up">
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active text-center">
+                        <i class="fas fa-quote-left display-3 text-accent opacity-25 mb-4"></i>
+                        <p class="fs-2 font-serif italic mb-5 mx-auto max-width-800">"The detail in the custom pet portrait surpassed all my expectations. It's more than just art; it's a memory burned into wood."</p>
+                        <h5 class="mb-0 text-uppercase ls-2">Sarah J. Jenkins</h5>
+                        <p class="text-accent small text-uppercase fw-bold mt-2">Satisfied Collector</p>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <i class="fas fa-quote-left display-3 text-accent opacity-25 mb-4"></i>
+                        <p class="fs-2 font-serif italic mb-5 mx-auto max-width-800">"A truly spiritual experience receiving our wedding plaque. You can smell the scent of the wood and feel the hand-burned grain."</p>
+                        <h5 class="mb-0 text-uppercase ls-2">Marcus Thorne</h5>
+                        <p class="text-accent small text-uppercase fw-bold mt-2">Personal Client</p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon text-accent" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon text-accent" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Process Preview Section -->
+    <section id="process" class="py-5 py-lg-8 bg-dark text-white border-artisanal-y">
+        <div class="container">
+            <div class="row align-items-center g-5 flex-row-reverse">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <img src="assets/img/process-step-3.png" alt="Precision Burn" class="img-fluid border-artisanal-white shadow-lg">
+                </div>
+                <div class="col-lg-6" data-aos="fade-up">
+                    <h6 class="text-accent text-uppercase small fw-bold ls-5">Hand-Crafted</h6>
+                    <h2 class="mb-5 font-serif text-white">The Slow <span class="text-accent italic">Art</span></h2>
+                    <div class="d-flex gap-4 mb-5">
+                        <div class="text-accent fw-bold h1 font-serif italic" style="min-width: 60px;">01.</div>
+                        <div>
+                            <h4 class="font-serif">Strategic Concept</h4>
+                            <p class="opacity-75 fs-5">We analyze the wood grain's natural flow to synchronize it with your visual narrative.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-4 mb-5">
+                        <div class="text-accent fw-bold h1 font-serif italic" style="min-width: 60px;">02.</div>
+                        <div>
+                            <h4 class="font-serif">Precision Mapping</h4>
+                            <p class="opacity-75 fs-5">A high-fidelity carbon transfer ensures every anatomical detail is mapped for the master burn.</p>
+                        </div>
+                    </div>
+                    <a href="process.html" class="btn btn-primary-wood mt-3">The Full Methodology</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="footer-logo mb-4">
+                        <img src="assets/img/logo.png" alt="Pyrography Logo">
+                        <h3 class="text-white"><span class="text-accent italic">Pyrography</span></h3>
+                    </div>
+                    <p class="text-secondary">Handcrafted excellence in every burn. Dedicated to the ancient art of pyrography with a modern, artistic touch. Since 2010.</p>
+                    <div class="d-flex gap-3 mt-5 social-icons">
+                        <a href="#" class="btn rounded-0 px-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn rounded-0 px-3"><i class="fab fa-facebook-p"></i></a>
+                        <a href="#" class="btn rounded-0 px-3"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 footer-links">
+                    <h5>explore</h5>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="portfolio.html">portfolio</a></li>
+                        <li><a href="services.html">services</a></li>
+                        <li><a href="about.html">about</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 footer-links">
+                    <h5>support</h5>
+                    <ul>
+                        <li><a href="pricing.html">custom order</a></li>
+                        <li><a href="process.html">our process</a></li>
+                        <li><a href="faq.html">faq</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5>newsletter</h5>
+                    <p class="small text-secondary mb-4">Subscribe to get updates on new pieces and limited commission slots.</p>
+                    <form class="position-relative">
+                        <input type="email" class="form-control" placeholder="YOUR EMAIL ADDRESS" style="background: transparent; color: white;">
+                        <button class="btn text-accent position-absolute top-50 end-0 translate-middle-y me-3"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <hr class="mt-5 border-secondary opacity-25">
+            <div class="text-center py-4">
+                <p class="small text-secondary mb-0">&copy; 2026 Freelance PyrographyArtist. Hand-burned with Pride.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button id="scroll-to-top" title="Scroll to Top"><i class="fas fa-long-arrow-alt-up"></i></button>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+

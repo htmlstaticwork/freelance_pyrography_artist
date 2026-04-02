@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Freelance Pyrography Artist</title>
+    <meta name="description"
+        content="Explore professional wood burning services including custom portraits, decorative home decor, and personalized wood art gifts.">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-wood">
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-xl sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" alt="Pyrography Logo">
+                <span><span class="text-accent italic">Pyrography</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <!-- Mobile Home Links (Direct access for touch devices) -->
+                    <li class="nav-item d-xl-none"><a class="nav-link" href="index.html">home 1</a></li>
+                    <li class="nav-item d-xl-none"><a class="nav-link" href="index2.html">home 2</a></li>
+
+                    <!-- Desktop Home Dropdown (Single menu for desktop) -->
+                    <li class="nav-item dropdown d-none d-xl-block">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownHome" role="button" data-bs-toggle="dropdown" aria-expanded="false">home</a>
+                        <ul class="dropdown-menu border-artisanal" aria-labelledby="navbarDropdownHome">
+                            <li><a class="dropdown-item" href="index.html">home 1</a></li>
+                            <li><a class="dropdown-item" href="index2.html">home 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">about</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="process.html">process</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">custom order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <div class="d-flex gap-2">
+                            <button id="theme-toggle" class="nav-icon-btn" title="Toggle Theme"><i
+                                    class="fas fa-moon"></i></button>
+                            <button id="rtl-toggle" class="nav-icon-btn" title="Toggle Layout"><i
+                                    class="fas fa-arrows-alt-h"></i></button>
+                        </div>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="signup.html" class="btn btn-primary-wood">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-secondary bg-opacity-10 py-5">
+        <div class="container py-5 text-center" data-aos="fade-up">
+            <h6 class="text-accent text-uppercase small fw-bold mb-3" style="letter-spacing: 5px;">Our Expertise</h6>
+            <h1 class="display-3 mb-4 font-serif">Artistic <span class="text-accent italic">Services</span></h1>
+            <p class="lead text-secondary max-width-600 mx-auto fs-5">I offer specialized wood burning services that
+                transform natural wood into timeless treasures.</p>
+        </div>
+    </header>
+
+    <!-- 1. Main Services Grid Section -->
+    <section id="main-services" class="bg-wood py-5 py-lg-8">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card p-0 border-artisanal bg-transparent h-100 animate-on-scroll overflow-hidden">
+                        <div class="art-card ratio ratio-4x3">
+                            <img src="assets/img/service-portrait.png" alt="Custom Portraits" class="object-fit-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-serif italic text-primary">Custom Portraits</h3>
+                            <p class="text-secondary">Capture your pets, family members, or loved ones in extreme
+                                detail. Each portrait is painstakingly burned to capture the soul of the subject.</p>
+                            <ul class="list-unstyled mt-4 small text-secondary">
+                                <li class="mb-2"><i class="fas fa-check text-accent me-2"></i> Photo-realistic shading
+                                </li>
+                                <li class="mb-2"><i class="fas fa-check text-accent me-2"></i> Personalized wood slices
+                                </li>
+                                <li class="mb-2"><i class="fas fa-check text-accent me-2"></i> Memorial text included
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card p-0 border-artisanal bg-transparent h-100 animate-on-scroll overflow-hidden">
+                        <div class="art-card ratio ratio-4x3">
+                            <img src="assets/img/service-nature.png" alt="Nature Art" class="object-fit-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-serif italic text-primary">Nature Art</h3>
+                            <p class="text-secondary">Explore wildlife and botanical illustrations. Perfect for cabin
+                                decor, living rooms, and nature enthusiasts seeking unique wall art.</p>
+                            <ul class="list-unstyled mt-4 small text-secondary">
+                                <li class="mb-2"><i class="fas fa-check text-accent me-2"></i> Detailed wildlife animals
+                                </li>
+                                <li class="mb-2"><i class="fas fa-check text-accent me-2"></i> Natural wood grains
+                                    utilized</li>
+                                <li class="mb-2"><i class="fas fa-check text-accent me-2"></i> Custom-sized panels</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card p-0 border-artisanal bg-transparent h-100 animate-on-scroll overflow-hidden">
+                        <div class="art-card ratio ratio-4x3">
+                            <img src="assets/img/service-signage.png" alt="Calligraphy Art" class="object-fit-cover">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-serif italic">Calligraphy Art</h3>
+                            <p class="text-secondary">Hand-lettered wood signs for weddings, name plates, and
+                                motivational quotes. Elegant, permanent, and rustic.</p>
+                            <ul class="list-unstyled mt-4 small text-secondary">
+                                <li class="mb-2"><i class="fas fa-check text-accent me-2"></i> Modern & classic scripts
+                                </li>
+                                <li class="mb-2"><i class="fas fa-check text-accent me-2"></i> Personalized date burning
+                                </li>
+                                <li class="mb-2"><i class="fas fa-check text-accent me-2"></i> Outdoor durability sealed
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Wood Materials Section -->
+    <section class="bg-wood py-5 py-lg-8" id="materials">
+        <div class="container">
+            <div class="row align-items-center g-5 flex-row-reverse">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="border-artisanal">
+                        <img src="assets/img/art-nature-1.jpg" alt="Materials" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up">
+                    <h6 class="text-accent text-uppercase small fw-bold">The Canvas</h6>
+                    <h2 class="mb-4 font-serif">Premium Wood Selection</h2>
+                    <p class="mb-5 fs-5">Choosing the right wood is the first step in creating excellence. I work with
+                        several high-quality woods, each offering a different burning experience.</p>
+                    <div class="row g-4">
+                        <div class="col-6">
+                            <h5 class="text-uppercase ls-2">Basswood</h5>
+                            <p class="small text-secondary">The gold standard for pyrography. Its light color and
+                                minimal grain allow for high-contrast, photo-detailed burns.</p>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="text-uppercase ls-2">Maple</h5>
+                            <p class="small text-secondary">A hard, durable wood that provides a smooth, elegant surface
+                                for refined, professional commissions.</p>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="text-uppercase ls-2">Cedar</h5>
+                            <p class="small text-secondary">Retains the natural bark, offering a rustic feel and an
+                                incredible natural aroma.</p>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="text-uppercase ls-2">Oak</h5>
+                            <p class="small text-secondary">Strong grain patterns that add character to minimalist
+                                designs and lettering.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Bespoke Experience Section -->
+    <section id="bespoke" class="py-5 bg-wood">
+        <div class="container text-center">
+            <div class="section-title" data-aos="fade-up">
+                <h6 class="text-accent text-uppercase small fw-bold">Unique Pieces</h6>
+                <h2 class="font-serif">A Bespoke Creative <span class="text-accent italic">Journey</span></h2>
+                <div class="divider"></div>
+            </div>
+            <p class="max-width-800 mx-auto text-secondary mb-5 fs-5">Every single piece I create is one-of-a-kind. I
+                don't use templates or lasers. My tools are my hands and a burning pen, ensuring your piece is truly
+                unique.</p>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-5 border-artisanal bg-transparent">
+                        <h1 class="text-accent display-4 fw-bold font-serif italic">1/1</h1>
+                        <p class="mb-0 text-uppercase ls-2 fw-bold">No Copies Ever</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-5 border-artisanal bg-transparent">
+                        <h1 class="text-accent display-4 fw-bold font-serif italic">100%</h1>
+                        <p class="mb-0 text-uppercase ls-2 fw-bold">Handcrafted</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="p-5 border-artisanal bg-transparent">
+                        <h1 class="text-accent display-4 fw-bold font-serif italic">10y</h1>
+                        <p class="mb-0 text-uppercase ls-2 fw-bold">Artisan Skill</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Heritage Care Guide Section -->
+    <section id="care-guide" class="py-5 py-lg-8 bg-wood">
+        <div class="container text-center">
+            <div class="section-title" data-aos="fade-up">
+                <h6 class="text-accent text-uppercase small fw-bold">Preservation</h6>
+                <h2 class="font-serif italic">Heritage Care Guide</h2>
+                <div class="divider"></div>
+            </div>
+            <p class="max-width-800 mx-auto text-secondary mb-5 fs-5">Wood is a living material. To ensure your custom
+                burn remains a family heirloom for generations, follow these simple care steps.</p>
+            <div class="row g-4 text-start">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card p-0 border-artisanal bg-transparent h-100 animate-on-scroll overflow-hidden">
+                        <div class="art-card ratio ratio-4x3">
+                            <img src="assets/img/art-nature-1.jpg" alt="UV Protection" class="object-fit-cover">
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-serif mb-3 text-accent">UV Protection</h4>
+                            <p class="small text-secondary mb-0">Burning is permanent, but direct sunlight can fade wood
+                                tones over decades. Display your art in a well-lit room, but away from direct window
+                                glare.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card p-0 border-artisanal bg-transparent h-100 animate-on-scroll overflow-hidden">
+                        <div class="art-card ratio ratio-4x3">
+                            <img src="assets/img/process-step-2.png" alt="Humidity Health" class="object-fit-cover">
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-serif mb-3 text-accent">Humidity Health</h4>
+                            <p class="small text-secondary mb-0">Extreme temperature or moisture changes can cause wood
+                                to expand or contract. Humidity levels between 40-50% are ideal for natural wood slabs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card p-0 border-artisanal bg-transparent h-100 animate-on-scroll overflow-hidden">
+                        <div class="art-card ratio ratio-4x3">
+                            <img src="assets/img/studio-tools.jpg" alt="Soft Cleaning" class="object-fit-cover">
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-serif mb-3 text-accent">Soft Cleaning</h4>
+                            <p class="small text-secondary mb-0">Never use chemical cleaners or wet wipes. A simple pass
+                                with a dry, soft microfiber cloth is all that's required to clear dust from the grain.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="footer-logo mb-4">
+                        <img src="assets/img/logo.png" alt="Pyrography Logo">
+                        <h3 class="text-white"><span class="text-accent italic">Pyrography</span></h3>
+                    </div>
+                    <p class="text-secondary">Handcrafted excellence in every burn. Dedicated to the ancient art of
+                        pyrography with a modern, artistic touch. Since 2010.</p>
+                    <div class="d-flex gap-3 mt-5 social-icons">
+                        <a href="#" class="btn rounded-0 px-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn rounded-0 px-3"><i class="fab fa-facebook-p"></i></a>
+                        <a href="#" class="btn rounded-0 px-3"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 footer-links">
+                    <h5>explore</h5>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="portfolio.html">portfolio</a></li>
+                        <li><a href="services.html">services</a></li>
+                        <li><a href="about.html">about</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 footer-links">
+                    <h5>support</h5>
+                    <ul>
+                        <li><a href="pricing.html">custom order</a></li>
+                        <li><a href="process.html">our process</a></li>
+                        <li><a href="faq.html">faq</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5>newsletter</h5>
+                    <p class="small text-secondary mb-4">Subscribe to get updates on new pieces and limited commission
+                        slots.</p>
+                    <form class="position-relative">
+                        <input type="email" class="form-control" placeholder="YOUR EMAIL ADDRESS"
+                            style="background: transparent; color: white;">
+                        <button class="btn text-accent position-absolute top-50 end-0 translate-middle-y me-3"><i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <hr class="mt-5 border-secondary opacity-25">
+            <div class="text-center py-4">
+                <p class="small text-secondary mb-0">&copy; 2026 Freelance PyrographyArtist. Hand-burned with Pride.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button id="scroll-to-top" title="Scroll to Top"><i class="fas fa-long-arrow-alt-up"></i></button>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

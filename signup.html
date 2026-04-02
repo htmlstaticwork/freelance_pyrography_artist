@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Freelance Pyrography Artist</title>
+    <meta name="description" content="Create an account to track your custom pyrography orders and save your favorite wood-burned artworks.">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-wrapper bg-wood">
+
+    <div class="auth-toggles">
+        <button id="theme-toggle" class="nav-icon-btn" title="Toggle Theme"><i class="fas fa-moon"></i></button>
+        <button id="rtl-toggle" class="nav-icon-btn" title="Toggle Layout"><i class="fas fa-arrows-alt-h"></i></button>
+    </div>
+
+    <div class="container d-flex align-items-center justify-content-center min-vh-100 py-5">
+        <div class="auth-card p-5 border-artisanal bg-transparent w-100" style="max-width: 500px;" data-aos="fade-up">
+            <div class="auth-header text-center mb-5">
+                <a href="index.html" class="text-decoration-none mb-3">
+                    <img src="assets/img/logo.png" alt="Pyrography Logo">
+                    <h2 class="font-serif"><span class="text-accent italic">Pyrography</span></h2>
+                </a>
+                <h4 class="text-uppercase ls-2 mb-2">Create Account</h4>
+                <p class="text-secondary italic">Join our community of art lovers</p>
+            </div>
+
+
+            <div class="text-center mb-4">
+                <span class="text-secondary small ls-2">OR USE EMAIL</span>
+            </div>
+
+            <form id="signup-form" novalidate>
+                <div class="mb-4">
+                    <label class="form-label text-uppercase small fw-bold">Full Name</label>
+                    <input type="text" class="form-control" placeholder="John Doe" required>
+                    <div class="invalid-feedback italic">Please enter your name</div>
+                </div>
+                <div class="mb-4">
+                    <label class="form-label text-uppercase small fw-bold">Email Address</label>
+                    <input type="email" class="form-control" placeholder="name@example.com" required>
+                    <div class="invalid-feedback italic">Please enter a valid email</div>
+                </div>
+                <div class="mb-4 password-group">
+                    <label class="form-label text-uppercase small fw-bold">Password</label>
+                    <div class="position-relative">
+                        <input type="password" class="form-control" placeholder="••••••••" required>
+                        <i class="fas fa-eye toggle-password position-absolute top-50 end-0 translate-middle-y me-3 cursor-pointer text-accent"></i>
+                    </div>
+                    <div class="invalid-feedback italic">Please enter a password</div>
+                </div>
+                <div class="mb-5 form-check">
+                    <input type="checkbox" class="form-check-input" id="terms" required>
+                    <label class="form-check-label small italic" for="terms">I agree to the Terms & Conditions</label>
+                </div>
+                <button type="submit" class="btn btn-primary-wood w-100 py-3 text-uppercase ls-2">Create Account</button>
+            </form>
+
+            <div class="social-auth mt-5">
+                <div class="text-center mb-4">
+                    <span class="text-secondary small ls-2">OR CONTINUE WITH</span>
+                </div>
+                <div class="row g-3">
+                    <div class="col-6">
+                        <button class="btn border-artisanal text-secondary w-100 py-3 small ls-1"><i class="fab fa-google text-accent me-2"></i> GOOGLE</button>
+                    </div>
+                    <div class="col-6">
+                        <button class="btn border-artisanal text-secondary w-100 py-3 small ls-1"><i class="fab fa-facebook text-accent me-2"></i> FACEBOOK</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5 text-center">
+                <p class="small italic">Already have an account? <a href="login.html" class="text-accent fw-bold text-decoration-none text-uppercase ms-2 ls-1">Login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
