@@ -39,7 +39,8 @@
 
                     <!-- Desktop Home Dropdown (Single menu for desktop) -->
                     <li class="nav-item dropdown d-none d-xl-block">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownHome" role="button" data-bs-toggle="dropdown" aria-expanded="false">home</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHome" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">home</a>
                         <ul class="dropdown-menu border-artisanal" aria-labelledby="navbarDropdownHome">
                             <li><a class="dropdown-item" href="index.html">home 1</a></li>
                             <li><a class="dropdown-item" href="index2.html">home 2</a></li>
@@ -100,11 +101,13 @@
                             <p class="text-secondary mb-0">Artisan Woodside, CA 94062</p>
                         </div>
                     </div>
-                    <div class="d-flex gap-4 card border-artisanal p-4 bg-transparent text-accent">
-                        <div class="text-accent h1 mb-0"><i class="fab fa-instagram"></i></div>
-                        <div>
-                            <h6 class="text-uppercase ls-2">Social Media</h6>
-                            <p class="text-secondary mb-0">@freelance_pyrographyartist</p>
+                    <div class="card border-artisanal p-4 bg-transparent text-accent">
+                        <h6 class="text-uppercase ls-2 mb-3">Social Media</h6>
+                        <div class="d-flex gap-3 mt-2">
+                            <a href="#" class="text-accent fs-3"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-accent fs-3"><i class="fab fa-facebook-p"></i></a>
+                            <a href="#" class="text-accent fs-3"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="#" class="text-accent fs-3"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
@@ -159,22 +162,23 @@
     </section>
 
     <!-- 2. Studio Visit Section -->
-    <section class="bg-dark text-white py-5" id="visit">
+    <section class="py-5" id="visit" style="background-color: var(--bg-secondary);">
         <div class="container text-center">
-            <h2 class="display-5 mb-4 font-serif">Studio <span class="text-accent italic">Visits</span></h2>
-            <p class="lead opacity-75 mb-5 mx-auto max-width-700 fs-5 text-secondary">Visits to my wood shop are by
+            <h2 class="display-5 mb-4 font-serif text-primary">Studio <span class="text-accent italic">Visits</span>
+            </h2>
+            <p class="lead mb-5 mx-auto max-width-700 fs-5 text-secondary">Visits to my wood shop are by
                 appointment only. This ensures I can give you my full attention and showcase various wood types and
                 finished pieces.</p>
             <div class="row justify-content-center g-4 mt-2">
                 <div class="col-md-5" data-aos="fade-up" data-aos-delay="100">
-                    <div class="p-5 border-artisanal border-white">
+                    <div class="p-5 border-artisanal">
                         <div class="text-accent h1 mb-4"><i class="fas fa-calendar-check"></i></div>
                         <h5 class="text-uppercase ls-2">Mon - Fri</h5>
                         <p class="text-secondary mb-0">10:00 AM - 05:00 PM</p>
                     </div>
                 </div>
                 <div class="col-md-5" data-aos="fade-up" data-aos-delay="200">
-                    <div class="p-5 border-artisanal border-white">
+                    <div class="p-5 border-artisanal">
                         <div class="text-accent h1 mb-4"><i class="fas fa-clock"></i></div>
                         <h5 class="text-uppercase ls-2">Sat - Sun</h5>
                         <p class="text-secondary mb-0">By Special Request Only</p>
@@ -193,20 +197,17 @@
                         <img src="assets/img/logo.png" alt="Pyrography Logo">
                         <h3 class="text-white"><span class="text-accent italic">Pyrography</span></h3>
                     </div>
-                    <p class="text-secondary">Handcrafted excellence in every burn. Dedicated to the ancient art of
+                    <p class="text-secondary mb-4">Handcrafted excellence in every burn. Dedicated to the ancient art of
                         pyrography with a modern, artistic touch. Since 2010.</p>
-                    <div class="d-flex gap-3 mt-5">
-                        <a href="#" class="btn btn-outline-light text-accent rounded-0 px-3"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="#" class="btn btn-outline-light text-accent rounded-0 px-3"><i
-                                class="fab fa-facebook-p"></i></a>
-                        <a href="#" class="btn btn-outline-light text-accent rounded-0 px-3"><i
-                                class="fab fa-pinterest-p"></i></a>
+                    <div class="d-flex gap-3 social-icons">
+                        <a href="#" class="btn rounded-0 px-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn rounded-0 px-3"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" class="btn rounded-0 px-3"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 footer-links">
                     <h5>explore</h5>
-                    <ul>
+                    <ul class="list-unstyled">
                         <li><a href="index.html">home</a></li>
                         <li><a href="portfolio.html">portfolio</a></li>
                         <li><a href="services.html">services</a></li>
@@ -215,7 +216,7 @@
                 </div>
                 <div class="col-lg-2 col-md-4 footer-links">
                     <h5>support</h5>
-                    <ul>
+                    <ul class="list-unstyled">
                         <li><a href="pricing.html">custom order</a></li>
                         <li><a href="process.html">our process</a></li>
                         <li><a href="faq.html">faq</a></li>
@@ -226,9 +227,8 @@
                     <h5>newsletter</h5>
                     <p class="small text-secondary mb-4">Subscribe to get updates on new pieces and limited commission
                         slots.</p>
-                    <form class="position-relative">
-                        <input type="email" class="form-control" placeholder="YOUR EMAIL ADDRESS"
-                            style="background: transparent; color: white;">
+                    <form class="position-relative footer-newsletter">
+                        <input type="email" class="form-control" placeholder="YOUR EMAIL ADDRESS">
                         <button class="btn text-accent position-absolute top-50 end-0 translate-middle-y me-3"><i
                                 class="fas fa-paper-plane"></i></button>
                     </form>

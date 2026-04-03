@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Theme & RTL Initialization ---
     const currentTheme = localStorage.getItem('theme') || 'light';
     const currentDir = localStorage.getItem('dir') || 'ltr';
-    
+
     document.documentElement.setAttribute('data-theme', currentTheme);
     document.documentElement.setAttribute('dir', currentDir);
 
@@ -51,9 +51,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (scrollTopBtn) {
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 300) {
-                scrollTopBtn.style.display = 'flex';
+                scrollTopBtn.classList.add('show');
             } else {
-                scrollTopBtn.style.display = 'none';
+                scrollTopBtn.classList.remove('show');
             }
         });
 
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Form Validation & Handling ---
     const forms = document.querySelectorAll('form');
-    
+
     forms.forEach(form => {
         form.addEventListener('submit', (e) => {
             if (!validateForm(form)) {
@@ -110,14 +110,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function validateForm(form) {
         let isValid = true;
         const inputs = form.querySelectorAll('input[required], textarea[required], select[required]');
-        
+
         inputs.forEach(input => {
             if (!input.value.trim()) {
                 input.classList.add('is-invalid');
                 isValid = false;
             } else {
                 input.classList.remove('is-invalid');
-                
+
                 // Email validation
                 if (input.type === 'email' && !validateEmail(input.value)) {
                     input.classList.add('is-invalid');
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Password Visibility Toggle ---
     const togglePasswordIcons = document.querySelectorAll('.toggle-password');
     togglePasswordIcons.forEach(icon => {
-        icon.addEventListener('click', function() {
+        icon.addEventListener('click', function () {
             const input = this.parentElement.querySelector('input');
             const type = input.getAttribute('type') === 'password' ? 'text' : 'password';
             input.setAttribute('type', type);
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const imagePreviewContainer = document.querySelector('#image-preview');
     if (imageUpload && imagePreviewContainer) {
         const imagePreviewImg = imagePreviewContainer.querySelector('img');
-        imageUpload.addEventListener('change', function() {
+        imageUpload.addEventListener('change', function () {
             const file = this.files[0];
             if (file) {
                 const reader = new FileReader();
