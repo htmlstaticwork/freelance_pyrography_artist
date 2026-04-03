@@ -126,6 +126,11 @@ body {
     /* Classic, highly readable body font */
     line-height: 1.8;
     transition: var(--transition);
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 h1,
@@ -211,15 +216,9 @@ h6 {
     padding: 0.8rem 0;
     transition: var(--transition);
     width: 100%;
-}
-
-/* Ensure navbar stays pinned on mobile/tablet */
-@media (max-width: 1199px) {
-    .navbar {
-        position: fixed !important;
-        top: 0;
-        z-index: 1030;
-    }
+    position: fixed !important;
+    top: 0;
+    z-index: 1030;
 }
 
 .navbar-brand {
@@ -392,7 +391,7 @@ h6 {
 
 .footer-links a {
     text-decoration: none;
-    color: var(--bg-primary);
+    color: #FDFAF5 !important;
     /* High contrast against dark footer */
     opacity: 0.7;
     transition: var(--transition);
@@ -473,8 +472,8 @@ h6 {
 }
 
 .btn-outline-theme:hover {
-    background: var(--text-primary);
-    color: var(--bg-primary);
+    background: var(--text-primary) !important;
+    color: var(--bg-primary) !important;
 }
 
 [data-theme="dark"] .btn-outline-dark {
@@ -710,9 +709,17 @@ h6 {
 
 /* Footer */
 footer {
-    background: var(--text-primary);
-    color: white;
+    background: #4B2E2E !important;
+    color: white !important;
     padding: 100px 0 40px;
+}
+
+/* Tablet View Footer: 2 columns per row */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    footer .row.g-5 > [class*="col-"] {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    }
 }
 
 footer .text-secondary {
@@ -754,7 +761,7 @@ footer p {
 }
 
 footer a {
-    color: var(--bg-primary) !important;
+    color: #FDFAF5 !important;
     /* Ensure visibility on dark footer */
     opacity: 0.7;
     text-transform: capitalize;
