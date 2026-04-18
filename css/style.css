@@ -151,6 +151,12 @@ h6 {
     }
 }
 
+@media (min-width: 1200px) {
+    body {
+        padding-top: 100px; /* Height of fixed navbar on desktop */
+    }
+}
+
 .heading-serif,
 .font-serif {
     font-family: 'Playfair Display', serif;
@@ -483,7 +489,7 @@ h6 {
 
 /* Hero Section Refinement */
 .hero-section {
-    padding: 160px 0 120px;
+    padding: 80px 0 120px;
     background-color: var(--text-primary);
     background-image: linear-gradient(rgba(45, 30, 30, 0.7), rgba(45, 30, 30, 0.8)), url('../assets/img/hero-main.jpg');
     background-size: cover;
