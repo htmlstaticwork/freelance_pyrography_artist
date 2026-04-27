@@ -147,13 +147,15 @@ h6 {
 
 @media (max-width: 1199px) {
     body {
-        padding-top: 75px; /* Height of fixed navbar */
+        padding-top: 75px;
+        /* Height of fixed navbar */
     }
 }
 
 @media (min-width: 1200px) {
     body {
-        padding-top: 100px; /* Height of fixed navbar on desktop */
+        padding-top: 100px;
+        /* Height of fixed navbar on desktop */
     }
 }
 
@@ -245,7 +247,8 @@ h6 {
 
 /* Map Section */
 #contact-map {
-    margin-top: 5rem !important; /* Larger gap to ensure no overlap */
+    margin-top: 5rem !important;
+    /* Larger gap to ensure no overlap */
 }
 
 @media (min-width: 992px) {
@@ -458,7 +461,8 @@ h6 {
     align-items: center;
     justify-content: center;
     transition: var(--transition);
-    height: 60px; /* Fixed height for symmetry */
+    height: 60px;
+    /* Fixed height for symmetry */
     font-size: 1rem;
 }
 
@@ -722,7 +726,7 @@ footer {
 
 /* Tablet View Footer: 2 columns per row */
 @media (min-width: 768px) and (max-width: 1199.98px) {
-    footer .row.g-5 > [class*="col-"] {
+    footer .row.g-5>[class*="col-"] {
         flex: 0 0 50% !important;
         max-width: 50% !important;
     }
@@ -809,10 +813,12 @@ footer h5 {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .hero-section h1, .hero-section-2 h1 {
+
+    .hero-section h1,
+    .hero-section-2 h1 {
         font-size: 3rem;
     }
-    
+
     .btn-hero {
         width: 100%;
         max-width: 280px;
@@ -826,14 +832,16 @@ footer h5 {
 /* Carousel Visibility Refinement */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    filter: invert(1) brightness(0.5); /* Default for light backgrounds */
+    filter: invert(1) brightness(0.5);
+    /* Default for light backgrounds */
     width: 3rem;
     height: 3rem;
 }
 
 [data-theme="dark"] .carousel-control-prev-icon,
 [data-theme="dark"] .carousel-control-next-icon {
-    filter: invert(0) brightness(1); /* Default for dark backgrounds */
+    filter: invert(0) brightness(1);
+    /* Default for dark backgrounds */
 }
 
 /* Ensure accent color applied in HTML still works or override */
@@ -854,8 +862,13 @@ footer h5 {
     color: var(--accent);
 }
 
-.carousel-control-prev-icon.text-accent::after { content: "\f053"; }
-.carousel-control-next-icon.text-accent::after { content: "\f054"; }
+.carousel-control-prev-icon.text-accent::after {
+    content: "\f053";
+}
+
+.carousel-control-next-icon.text-accent::after {
+    content: "\f054";
+}
 
 /* Carousel Indicators Styling */
 .carousel-indicators {
